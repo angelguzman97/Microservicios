@@ -1,0 +1,10 @@
+package com.mx.MSOrquestador.servicio;
+
+import com.mx.MSOrquestador.entity.Orquestador;
+
+public interface OrquestadorServ {
+	
+	public Orquestador guardar(Orquestador orquestador) throws ValidationException;
+	
+	
+}

@@ -1,0 +1,8 @@
+package com.mx.MSDominio.feignClients;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(name = "MS-ORQUESTADOR", url = "http://localhost:8031", path = "/OrquestadorWs")
+public interface IOrquestadorFeignClient {
+
+}

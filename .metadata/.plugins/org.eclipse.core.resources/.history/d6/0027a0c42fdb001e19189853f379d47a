@@ -1,0 +1,5 @@
+package com.mx.MSDominio.servicio;
+
+public interface DominioServ {
+
+}

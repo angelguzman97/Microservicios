@@ -1,0 +1,22 @@
+package com.mx.MSOrquestador.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import com.mx.MSOrquestador.servicio.OrquestadorServImp;;
+
+@RestController
+@RequestMapping(path="OrquestadorWs")
+@CrossOrigin
+public class OrquestadorWs{
+	@Autowired
+	OrquestadorServImp orquestadorServImp;
+	
+	// http://localhost:8031/OrquestadorWs
+	@PostMapping
+	private ResponseEntity<Orquestador> guardarOrquestador(@RequestBody Orquestador orquestador){
+		
+	}
+
+}

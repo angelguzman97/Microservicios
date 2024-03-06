@@ -1,0 +1,5 @@
+package com.mx.MSDominio.controller;
+
+public class DominioWs {
+
+}

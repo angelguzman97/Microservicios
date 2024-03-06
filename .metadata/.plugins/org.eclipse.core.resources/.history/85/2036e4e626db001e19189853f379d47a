@@ -1,0 +1,5 @@
+package com.mx.MSOrquestador.entity;
+
+public class Orquestador {
+
+}

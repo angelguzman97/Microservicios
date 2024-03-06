@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "95970bd1-c0f6-4768-b10a-235adda8e682",
+		"name": "Microservicio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32670807"
+	},
+	"item": [
+		{
+			"name": "GuardarDominio",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n       \"idDominio\":  1,\r\n\t\t\"informacion\" : \"Dominio 1\"\r\n     \r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8030/DominioWs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"DominioWs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GuardarOrquestador",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n       \"idOrquestador\":  1,\r\n\t\t\"informacion\" : \"Orquestador 1\"\r\n     \r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8031/OrquestadorWs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8031",
+					"path": [
+						"OrquestadorWs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

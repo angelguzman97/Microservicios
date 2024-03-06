@@ -1,0 +1,5 @@
+package com.mx.MSOrquestador.dao;
+
+public interface OrquestadorDao {
+
+}

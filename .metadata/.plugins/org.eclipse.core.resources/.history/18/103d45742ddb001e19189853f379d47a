@@ -1,0 +1,15 @@
+package com.mx.MSDominio.entity;
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "DOMINIO")
+public class Dominio {
+
+	@Id
+	@Column(name = "ID_DOMINIO")
+	private Integer idDominio;
+	
+	@Column(name = "INFORMACION")
+	private String informacion;
+}

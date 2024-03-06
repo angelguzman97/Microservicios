@@ -1,0 +1,5 @@
+package com.mx.MSDominio.entity;
+
+public class Dominio {
+
+}

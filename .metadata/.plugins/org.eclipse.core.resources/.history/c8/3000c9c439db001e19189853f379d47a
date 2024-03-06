@@ -1,0 +1,34 @@
+package com.mx.MSOrquestador.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import com.mx.MSOrquestador.entity.Orquestador;
+import com.mx.MSOrquestador.servicio.OrquestadorServImp;;
+
+@RestController
+@RequestMapping(path="OrquestadorWs")
+@CrossOrigin
+public class OrquestadorWs{
+	@Autowired
+	OrquestadorServImp orquestadorServImp;
+	
+	// http://localhost:8031/OrquestadorWs
+	@PostMapping
+	public ResponseEntity<?> guardar(@RequestBody Orquestador orquestador) {
+	    try {
+	        Orquestador resultado = orquestadorServImp.guardar(orquestador);
+	        return new ResponseEntity<>(resultado, HttpStatus.CREATED);
+	    } catch (ValidationException e) {
+	        // Manejo de errores de validación (código 400)
+	        return new ResponseEntity<>("Error de validación: " + e.getMessage(), HttpStatus.BAD_REQUEST);
+	    } catch (Exception e) {
+	        // Manejo de otros errores (código 500)
+	        return new ResponseEntity<>("Error interno del servidor", HttpStatus.INTERNAL_SERVER_ERROR);
+	    }
+	}
+
+
+}

@@ -1,0 +1,9 @@
+package com.mx.MSDominio.entity;
+
+import jakarta.persistence.*;
+
+@Entity
+
+public class Dominio {
+
+}

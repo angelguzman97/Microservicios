@@ -1,0 +1,10 @@
+package com.mx.MSOrquestador.controller;
+
+import org.springframework.web.bind.annotation.*;;
+
+@RestController
+@RequestMapping(path="OrquestadorWs")
+@CrossOrigin
+public class OrquestadorWs{
+
+}

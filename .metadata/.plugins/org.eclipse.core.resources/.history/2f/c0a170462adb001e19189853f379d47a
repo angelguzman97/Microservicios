@@ -1,0 +1,5 @@
+package com.mx.MSOrquestador.controller;
+
+public class OrquestadorWs {
+
+}

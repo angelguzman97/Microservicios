@@ -1,0 +1,6 @@
+package com.mx.MSDominio.model;
+
+public class Orquestador {
+
+	private String informacion;
+}
